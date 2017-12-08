@@ -1,0 +1,130 @@
+body{
+    background: #000000  ;
+    background-size: cover;
+    color: #fff;
+
+}
+header {
+    text-align: center;
+}
+
+img{
+    max-width:100%;
+}
+
+#button{
+    width: 100%;
+    position: relative;
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+}
+#playermove img{
+    width: 20%;
+    padding: 1%;
+}
+#dealermove img{
+    width: 20%;
+    padding: 1%;
+}
+#styledealer{
+    text-align: center;
+    width:50%;
+}
+#styleplayer{
+    text-align: center;
+    width: 50%;
+}
+#game{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#dealer{
+    display: none;
+}
+#player{
+    display: none;
+}
+#game #winner{
+    text-align: center;
+    background-color: black;
+    opacity: 0.79;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#lose{
+    z-index: 1000;
+}
+
+
+button {
+     display: inline-block;
+     padding: 1%;
+     font-size: 1.2rem;
+     text-align: center;
+     color: #fff;
+     background-color: #FE6F02;
+     border: none;
+     border-radius: 0.5rem;
+
+ }
+
+
+button:hover {background-color: #D75109}
+
+button:active {
+    background-color: #D75109;
+    box-shadow: 0 5px #666;
+
+}
+button:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+footer{
+    padding: 2%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px){
+    #styledealer{
+        width: 100%;
+    }
+    #styleplayer{
+        width: 100%;
+    }
+    #playermove img{
+        width: 10%;
+        padding: 1%;
+    }
+    #dealermove img{
+        width: 10%;
+        padding: 1%;
+    }
+
+}
+@media screen and (max-width: 1024px){
+    #styledealer{
+        width: 100%;
+    }
+    #styleplayer{
+        width: 100%;
+    }
+    #playermove img{
+        width: 20%;
+        padding: 1%;
+    }
+    #dealermove img{
+        width: 20%;
+        padding: 1%;
+    }
+
+}
+
+
+

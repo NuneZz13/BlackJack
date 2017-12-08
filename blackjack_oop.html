@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/blackjack_object.js"></script>
+    <script src="js/blackjack_manager.js"></script>
+    <title>BlackJack</title>
+  </head>
+
+  <body>
+    <header>
+        <img src="img/maintitle.png" />
+    </header>
+
+    <section id="game">
+      <div id="styledealer">
+      <h1>Dealer Cards</h1>
+           <p id="dealer"></p>
+          <div id="dealermove"></div>
+
+    </div>
+    <div id="styleplayer">
+    <h1>Player Cards:</h1>
+        <p id="player"></p>
+        <div id="playermove"></div>
+    </div>
+      <div id="winner" style="visibility: hidden">
+        <img id="lose" src="img/youlose.png"  />
+      </div>
+    </section>
+    <div id="button">
+      <section>
+        <button id="card" type="button" onclick="player_new_card()">Card</button>
+        <button id="stand" type="button" onclick="dealer_finish()">Stand</button>
+        <button id="new_game" type="button" onclick="new_game()" disabled>New Game</button>
+      </section>
+    </div>
+
+
+
+    <section>
+      <script> window.onload = new_game();</script>
+    </section>
+    <footer>
+      <h3>Copyright © Francisco Reis & Nelson Nunes - 2017/2018</h3>
+    </footer>
+  </body>
+
+</html> 
